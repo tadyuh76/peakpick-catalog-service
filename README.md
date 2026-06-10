@@ -1,12 +1,20 @@
 # PeakPick Catalog Service
 
-Owns product browsing data for the PeakPick demo.
+Catalog Service là microservice quản lý danh mục sản phẩm cho demo PeakPick.
 
-Owned database tables:
+## Database Riêng
+
+Service này sở hữu database `peakpick_catalog` với bảng:
 
 - `products`
 
-Run locally:
+## Trách Nhiệm
+
+- Trả danh sách sản phẩm.
+- Quản lý tên, loại, giá, trạng thái bán và thời gian chuẩn bị.
+- Không xử lý tồn kho thực tế hoặc checkout.
+
+## Chạy Local
 
 ```bash
 pip install -r requirements.txt
